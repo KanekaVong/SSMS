@@ -1,0 +1,777 @@
+{
+  "info": {
+    "_postman_id": "a550828d-9dbd-4f0b-a9e0-74c44183e608",
+    "name": "SSM",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "43462074"
+  },
+  "item": [
+    {
+      "name": "Show-Majors",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"MajorID\": 28,\r\n    \"majorName\": \"Testing 3\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/SSM/majors",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "SSM",
+            "majors"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Delete-Majors",
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"MajorID\": 28,\r\n    \"majorName\": \"Testing 3\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/SSM/majors/51",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "SSM",
+                "majors",
+                "51"
+              ]
+            }
+          },
+          "_postman_previewlanguage": "",
+          "header": [],
+          "cookie": [
+            {
+              "expires": "Invalid Date",
+              "domain": "",
+              "path": ""
+            }
+          ],
+          "body": ""
+        },
+        {
+          "name": "Update-Majors",
+          "originalRequest": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"MajorID\": 28,\r\n    \"majorName\": \"Testing 3\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/SSM/majors/5",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "SSM",
+                "majors",
+                "5"
+              ]
+            }
+          },
+          "_postman_previewlanguage": null,
+          "header": null,
+          "cookie": [],
+          "body": "{\r\n  \"majorName\": \"International Relations\"\r\n}"
+        },
+        {
+          "name": "Create-Majors",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"MajorID\": 28,\r\n    \"majorName\": \"Testing 3\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/SSM/majors",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "SSM",
+                "majors"
+              ]
+            }
+          },
+          "_postman_previewlanguage": "",
+          "header": [],
+          "cookie": [
+            {
+              "expires": "Invalid Date",
+              "domain": "",
+              "path": ""
+            }
+          ],
+          "body": "{\r\n  \"majorName\": \"Software Engineering\"\r\n}"
+        },
+        {
+          "name": "Show-Majors",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"MajorID\": 28,\r\n    \"majorName\": \"Testing 3\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/SSM/majors",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "SSM",
+                "majors"
+              ]
+            }
+          },
+          "_postman_previewlanguage": null,
+          "header": null,
+          "cookie": [],
+          "body": null
+        }
+      ]
+    },
+    {
+      "name": "Subjects",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"subjectName\": \"Economic III\",\r\n  \"major\": {\r\n    \"majorID\": 2,\r\n    \"majorName\": \"Finance And Technology\"\r\n  }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/SSM/subjects",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "SSM",
+            "subjects"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Create-Subjects",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"subjectName\": \"Economic V\",\r\n  \"major\": {\r\n    \"majorID\": 2,\r\n    \"majorName\": \"Finance And Technology\"\r\n  }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/SSM/subjects",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "SSM",
+                "subjects"
+              ]
+            }
+          },
+          "_postman_previewlanguage": "",
+          "header": [],
+          "cookie": [
+            {
+              "expires": "Invalid Date",
+              "domain": "",
+              "path": ""
+            }
+          ],
+          "body": ""
+        },
+        {
+          "name": "Show-Subjects",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"subjectName\": \"Economic III\",\r\n  \"major\": {\r\n    \"majorID\": 2,\r\n    \"majorName\": \"Finance And Technology\"\r\n  }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/SSM/subjects",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "SSM",
+                "subjects"
+              ]
+            }
+          },
+          "_postman_previewlanguage": null,
+          "header": null,
+          "cookie": [],
+          "body": null
+        },
+        {
+          "name": "Delete-Subjects",
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"subjectName\": \"Economic III\",\r\n  \"major\": {\r\n    \"majorID\": 2,\r\n    \"majorName\": \"Finance And Technology\"\r\n  }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/SSM/subjects/23",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "SSM",
+                "subjects",
+                "23"
+              ]
+            }
+          },
+          "_postman_previewlanguage": "",
+          "header": [],
+          "cookie": [
+            {
+              "expires": "Invalid Date",
+              "domain": "",
+              "path": ""
+            }
+          ],
+          "body": ""
+        },
+        {
+          "name": "Update-Subjects",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"subjectName\": \"International Law\",\r\n  \"majorID\": 2\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/SSM/subjects/6",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "SSM",
+                "subjects",
+                "6"
+              ]
+            }
+          },
+          "_postman_previewlanguage": null,
+          "header": null,
+          "cookie": [],
+          "body": null
+        }
+      ]
+    },
+    {
+      "name": "Scores",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/SSM/scores",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "SSM",
+            "scores"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Show-Scores",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/SSM/scores",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "SSM",
+                "scores"
+              ]
+            }
+          },
+          "_postman_previewlanguage": null,
+          "header": null,
+          "cookie": [],
+          "body": null
+        },
+        {
+          "name": "Delete-Scores",
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/SSM/scores/16",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "SSM",
+                "scores",
+                "16"
+              ]
+            }
+          },
+          "_postman_previewlanguage": null,
+          "header": null,
+          "cookie": [],
+          "body": null
+        },
+        {
+          "name": "Create-Scores",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"studentId\": 1005,\r\n  \"subjectId\": 4,\r\n  \"score\": 96\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/SSM/scores",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "SSM",
+                "scores"
+              ]
+            }
+          },
+          "_postman_previewlanguage": null,
+          "header": null,
+          "cookie": [],
+          "body": null
+        },
+        {
+          "name": "Update-Scores",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"studentId\": 1005,\r\n  \"subjectId\": 4,\r\n  \"score\": 96\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/SSM/scores/16",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "SSM",
+                "scores",
+                "16"
+              ]
+            }
+          },
+          "_postman_previewlanguage": "",
+          "header": [],
+          "cookie": [
+            {
+              "expires": "Invalid Date",
+              "domain": "",
+              "path": ""
+            }
+          ],
+          "body": ""
+        }
+      ]
+    },
+    {
+      "name": "Students",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": " ",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/SSM/students",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "SSM",
+            "students"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Create-Students",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"studentName\": \"Moun Mara\",\r\n  \"gender\": \"Male\",\r\n  \"majorID\": 2,\r\n  \"dob\": \"1980-05-04\",\r\n  \"pob\": \"Preah Vihear\",\r\n  \"phoneNumber\": \"012345678\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/SSM/students",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "SSM",
+                "students"
+              ]
+            }
+          },
+          "_postman_previewlanguage": null,
+          "header": null,
+          "cookie": [],
+          "body": null
+        },
+        {
+          "name": "Delete Students",
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": " ",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/SSM/students/1010",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "SSM",
+                "students",
+                "1010"
+              ]
+            }
+          },
+          "_postman_previewlanguage": "",
+          "header": [],
+          "cookie": [
+            {
+              "expires": "Invalid Date",
+              "domain": "",
+              "path": ""
+            }
+          ],
+          "body": ""
+        },
+        {
+          "name": "Update-Students",
+          "originalRequest": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"studentName\": \"Moun Mara\",\r\n  \"gender\": \"Male\",\r\n  \"majorID\": 2,\r\n  \"dob\": \"1980-05-04\",\r\n  \"pob\": \"Preah Vihear\",\r\n  \"phoneNumber\": \"012345678\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/SSM/students/1021",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "SSM",
+                "students",
+                "1021"
+              ]
+            }
+          },
+          "_postman_previewlanguage": "",
+          "header": [],
+          "cookie": [
+            {
+              "expires": "Invalid Date",
+              "domain": "",
+              "path": ""
+            }
+          ],
+          "body": "{\r\n  \"studentName\": \"So Linna\",\r\n  \"gender\": \"Female\",\r\n  \"majorID\": 3,\r\n  \"dob\": \"2006-07-13\",\r\n  \"pob\": \"Phnom Penh\",\r\n  \"phoneNumber\": \"012345678\"\r\n}\r\n\r\n"
+        },
+        {
+          "name": "Show-Students",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"studentName\": \"Moun Mara\",\r\n  \"gender\": \"Male\",\r\n  \"majorID\": 2,\r\n  \"dob\": \"1980-05-04\",\r\n  \"pob\": \"Preah Vihear\",\r\n  \"phoneNumber\": \"012345678\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/SSM/students",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "SSM",
+                "students"
+              ]
+            }
+          },
+          "_postman_previewlanguage": "",
+          "header": [],
+          "cookie": [
+            {
+              "expires": "Invalid Date",
+              "domain": "",
+              "path": ""
+            }
+          ],
+          "body": ""
+        }
+      ]
+    },
+    {
+      "name": "FindScoreOfStudent",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/SSM/students/1001/scores",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "SSM",
+            "students",
+            "1001",
+            "scores"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Overall-Grade",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/SSM/students/grade-summaries",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "SSM",
+            "students",
+            "grade-summaries"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
