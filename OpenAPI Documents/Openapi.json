@@ -1,0 +1,752 @@
+ {
+  "openapi": "3.1.0",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:8080",
+      "description": "Generated server url"
+    }
+  ],
+  "tags": [
+    {
+      "name": "Subject Management",
+      "description": "APIs for managing subjects"
+    },
+    {
+      "name": "Student's Management",
+      "description": "APIs for managing student records"
+    },
+    {
+      "name": "Major Management",
+      "description": "APIs for managing majors"
+    },
+    {
+      "name": "Score Management",
+      "description": "APIs for managing scores"
+    }
+  ],
+  "paths": {
+    "/SSM/subjects/{id}": {
+      "put": {
+        "tags": [
+          "Subject Management"
+        ],
+        "operationId": "update",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Subject"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Subject"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Subject Management"
+        ],
+        "operationId": "delete",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/SSM/students/{id}": {
+      "put": {
+        "tags": [
+          "Student's Management"
+        ],
+        "operationId": "update_1",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Student"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Student"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Student's Management"
+        ],
+        "operationId": "delete_1",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/SSM/scores/{id}": {
+      "put": {
+        "tags": [
+          "Score Management"
+        ],
+        "operationId": "update_2",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Scores"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Scores"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Score Management"
+        ],
+        "operationId": "delete_2",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/SSM/majors/{id}": {
+      "put": {
+        "tags": [
+          "Major Management"
+        ],
+        "operationId": "update_3",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Major"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Major"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Major Management"
+        ],
+        "operationId": "delete_3",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/SSM/subjects": {
+      "get": {
+        "tags": [
+          "Subject Management"
+        ],
+        "operationId": "getAll",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Subject"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Subject Management"
+        ],
+        "operationId": "create",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Subject"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Subject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/SSM/students": {
+      "get": {
+        "tags": [
+          "Student's Management"
+        ],
+        "operationId": "getAll_1",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Student"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Student's Management"
+        ],
+        "operationId": "create_1",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Student"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Student"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/SSM/scores": {
+      "get": {
+        "tags": [
+          "Score Management"
+        ],
+        "operationId": "getAll_2",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Scores"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Score Management"
+        ],
+        "operationId": "create_2",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Scores"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Scores"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/SSM/majors": {
+      "get": {
+        "tags": [
+          "Major Management"
+        ],
+        "operationId": "getAll_3",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Major"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Major Management"
+        ],
+        "operationId": "create_3",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Major"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Major"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/SSM/students/{id}/scores": {
+      "get": {
+        "tags": [
+          "Student's Management"
+        ],
+        "operationId": "getStudentScores",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/StudentScoreDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/SSM/students/grade-summaries": {
+      "get": {
+        "tags": [
+          "Student's Management"
+        ],
+        "operationId": "getGradeSummaries",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/StudentGradeSummaryDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Major": {
+        "type": "object",
+        "properties": {
+          "majorID": {
+            "type": "integer",
+            "format": "int64",
+            "readOnly": true
+          },
+          "majorName": {
+            "type": "string",
+            "maxLength": 2147483647,
+            "minLength": 2
+          }
+        },
+        "required": [
+          "majorName"
+        ]
+      },
+      "Subject": {
+        "type": "object",
+        "properties": {
+          "subjectID": {
+            "type": "integer",
+            "format": "int64",
+            "description": "The unique auto-generated database identifier for the student",
+            "readOnly": true
+          },
+          "subjectName": {
+            "type": "string",
+            "maxLength": 2147483647,
+            "minLength": 2
+          },
+          "majorID": {
+            "type": "integer",
+            "format": "int64",
+            "description": "The numeric ID of the existing Major to link this subject to."
+          },
+          "major": {
+            "$ref": "#/components/schemas/Major",
+            "readOnly": true
+          }
+        },
+        "required": [
+          "subjectName"
+        ]
+      },
+      "Student": {
+        "type": "object",
+        "properties": {
+          "studentId": {
+            "type": "integer",
+            "format": "int64",
+            "description": "The unique auto-generated database identifier for the student",
+            "readOnly": true
+          },
+          "studentName": {
+            "type": "string",
+            "maxLength": 2147483647,
+            "minLength": 2
+          },
+          "gender": {
+            "type": "string",
+            "minLength": 1
+          },
+          "majorID": {
+            "type": "integer",
+            "format": "int64",
+            "description": "The numeric ID of the existing Major to link this subject to."
+          },
+          "major": {
+            "$ref": "#/components/schemas/Major",
+            "readOnly": true
+          },
+          "dob": {
+            "type": "string",
+            "format": "date"
+          },
+          "pob": {
+            "type": "string",
+            "minLength": 1
+          },
+          "phoneNumber": {
+            "type": "string",
+            "maxLength": 2147483647,
+            "minLength": 2
+          }
+        },
+        "required": [
+          "dob",
+          "gender",
+          "phoneNumber",
+          "pob",
+          "studentName"
+        ]
+      },
+      "Scores": {
+        "type": "object",
+        "properties": {
+          "scoreID": {
+            "type": "integer",
+            "format": "int64",
+            "readOnly": true
+          },
+          "studentId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "student": {
+            "$ref": "#/components/schemas/Student",
+            "readOnly": true
+          },
+          "subjectId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "subject": {
+            "$ref": "#/components/schemas/Subject",
+            "readOnly": true
+          },
+          "score": {
+            "type": "integer",
+            "format": "int64",
+            "maximum": 100,
+            "minimum": 0
+          }
+        }
+      },
+      "StudentScoreDTO": {
+        "type": "object",
+        "properties": {
+          "studentID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "subject": {
+            "type": "string"
+          },
+          "score": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "studentName": {
+            "type": "string"
+          }
+        }
+      },
+      "StudentGradeSummaryDTO": {
+        "type": "object",
+        "properties": {
+          "average": {
+            "type": "number",
+            "format": "double"
+          },
+          "studentID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "totalScores": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "totalSubjects": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "gpa": {
+            "type": "number",
+            "format": "double"
+          },
+          "studentName": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
