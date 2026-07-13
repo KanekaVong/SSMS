@@ -46,7 +46,7 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.OracleDialect
 ### 1. Clone the repository
 ```bash
 git clone https://github.com
-cd student-score-management
+cd SSMS
 ```
 
 ### 2. Build the project
