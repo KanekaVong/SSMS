@@ -45,7 +45,7 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.OracleDialect
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com
+git clone https://github.com/KanekaVong/SSMS.git
 cd SSMS
 ```
 
